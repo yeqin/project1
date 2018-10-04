@@ -1,0 +1,122 @@
+
+
+  body {
+    max-width:1000px;
+    margin: 100px auto;
+    font-family: 'Merriweather', serif;
+    background:url("1.jpg") center center no-repeat;
+    height: 100%;
+    background-size:cover;
+    text-align:left;
+  }
+
+  mark { background-color: yellow; opacity: 0.5}
+
+#cat img {
+      margin:0 auto !important;
+      padding-top:20px;
+  }
+
+  #intro p {
+    color: #F1C40F;
+    font-family: 'Just Another Hand', cursive;
+    font-size:32px;
+}
+
+#counter .countdown {
+    color:#F1C40F;
+    font-family: 'Merriweather', cursive;
+    font-size:28px;
+    margin:-20px 0 0;
+}
+
+.row{
+  display:flex
+}
+.column{
+  padding:20px;
+}
+
+.column.side{
+  flex:1;
+}
+.column.middle{
+  flex:2
+}
+.spin{
+  margin-right: 20px;
+  animation-name:spin;
+  animation-duration: 4000ms;
+  animation-timing-function:linear;
+}
+@keyframes spin{
+  from{
+  transform: rotate(0deg);}
+  to{
+  transform:rotate(360deg);
+}
+}
+  #pic {
+    float: right;
+    margin: 0 0 0 0;
+  }
+
+  h1 {
+    text-align:center;
+    color: rgb(199, 0, 57);
+    margin: 0 0 18px 0;
+    /* margin deals with the outer space to the next outer element */
+    padding: 0 0 0 0;
+    /* padding deals with the inner space */
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    /*Letterspacing is the adjustment of the horizontal white space between the letters in a block of text. */
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(0,199,142);
+    margin: 0 0 12px 0;
+    padding: 0 0 12px 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgb(199, 0, 57);
+  }
+
+  p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    color: rgb(211, 84, 0);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  div {
+    margin: 0 0 2px 0;
+    padding: 0 0 2px 0;
+    color: #F1C40F;
+    letter-spacing: 0px;
+  }
+
+  a {
+    color: #F1C40F;
+  }
+
+  a:hover {
+    color: rgb(68, 19, 51);
+  }
+/*when viewpoint of device changes to less than 600 px*/
+@media (max-width:600px) {
+  .row{
+    flex-direction:column;
+  }
+  img{
+    display:none
+  }
+  #title{
+    text-align: :center;
+  }
+}
+  </style>
